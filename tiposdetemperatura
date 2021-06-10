@@ -1,0 +1,26 @@
+
+
+kelvin=0
+fahrenheit=0
+reaumur=0
+contador=0
+lista=[]
+#1.	Representar mediante un pseudocódigo, un algoritmo que lea una temperatura en la escala centígrada y nos calcule y escriba su valor en las escalas Reamur, Fahrenheit y Kelvin. Las formulas que nos relacionan los grados asociados a cada una de las escalas son los siguientes:1.	Representar mediante un pseudocódigo, un algoritmo que lea una temperatura en la escala centígrada y nos calcule y escriba su valor en las escalas Reamur, Fahrenheit y Kelvin. Las formulas que nos relacionan los grados asociados a cada una de las escalas son los siguientes:
+
+while(contador!=8):
+    centigrados = int(input())
+    #Pasar de centigrados a kelvin
+    kelvin=centigrados+273.15
+    print("El resultado en Kelvin es= ",kelvin)
+    lista.append(kelvin)
+    #Pasar de centigrados a fahrenheit
+    fahrenheit=(centigrados*9/5)+32
+    print("El resultado en Fahrenheit es= ",fahrenheit)
+    lista.append(fahrenheit)
+    #Pasar de centigrados a reamur
+    reaumur=centigrados*0.8
+    print("El resultado en Reaumur es= ",reaumur)
+    lista.append(reaumur)
+    contador = contador + 1
+
+print("El total de resultados es= ",lista)
